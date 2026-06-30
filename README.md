@@ -8,16 +8,18 @@
 ## โครงสร้าง
 
 ```
-FRAMEWORK.md              ← Meta: definition ของ "1 ระบบที่ดี"
+FRAMEWORK.md              ← Meta: definition ของ "1 ระบบที่ดี" (+ ปรัชญา, Architecture Rules, DoD, ADR)
 types/
 ├── STANDARD-CRUD.md      ← มาตรฐานระบบ CRUD-heavy (booking, ecommerce)
 └── STANDARD-PIPELINE.md   ← มาตรฐานระบบ Pipeline-heavy (AI agent, workflow)
 function-standards/
 ├── FUNCTION-AUTH.md      ← มาตรฐานฟังก์ชัน authentication
-├── FUNCTION-CRUD.md      ← มาตรฐานฟังก์ชัน CRUD
+├── FUNCTION-CRUD.md      ← มาตรฐานฟังก์ชัน CRUD (รวม DI pattern, function size, reason-to-change)
+├── FUNCTION-SERVICE.md   ← มาตรฐาน service layer + StandardResponse format
 └── FUNCTION-ERROR.md     ← มาตรฐาน error handling
+templates/                ← Architecture templates (system-boundary, module-map, ADR, risk, questions)
 agent/
-├── AGENTS.md             ← คำสั่งสำหรับ AI agent ก่อนแตะโค้ด
+├── AGENTS.md             ← คำสั่งสำหรับ AI agent (+ deletion test, layer violation check)
 └── prompts-template.md   ← prompt templates สำหรับงานซ้ำ
 modules/                  ← มาตรฐาน module ข้ามระบบ (auth, RBAC, audit)
 examples/                 ← ตัวอย่างการใช้งานจริง

@@ -9,6 +9,15 @@
 3. ก่อนเขียน module ใหม่ → เช็ค STANDARD-CRUD.md หรือ STANDARD-PIPELINE.md
 4. Error path ต้อง cover ทุกครั้ง
 5. Definition of Done ผ่านก่อนบอกเสร็จ
+6. **Layer violation check:** อย่าให้ layer ล่าง import layer บน
+7. **Deletion test:** ก่อนเพิ่มฟังก์ชัน ถามว่า "ลบฟังก์ชันนี้แล้วจะมีปัญหาอะไร? ถ้าไม่มีผล = ฟังก์ชันนี้ไม่จำเป็น"
+
+## "Reason to Change" Test สำหรับ AI
+
+ก่อนเพิ่ม member/function ใหม่:
+1. ถ้า class นี้ต้องแก้เพราะเหตุผลหลายอย่าง → split
+2. ถ้า class แก้เพราะเหตุผลเดียว → ok
+3. ถ้าฟังก์ชัน 100+ บรรทัด → split
 
 ## ไฟล์ที่ต้องอ่านก่อนทำงาน
 
