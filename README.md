@@ -1,11 +1,24 @@
 # Engineering Standard Framework
 
-> มาตรฐานระบบของ Mike — สำหรับสร้างระบบคุณภาพสูงในยุค AI
+> Engineering Standard Framework หรือ ESF คือกรอบมาตรฐานสำหรับการออกแบบ เขียน ตรวจ และดูแลระบบซอฟต์แวร์ โดยไม่ผูกติดกับภาษา โปรแกรม หรือเครื่องมือใดเครื่องมือหนึ่ง
 >
-> Framework นี้ไม่ใช่ template โค้ด แต่เป็น **มาตรฐานที่ใช้กำหนดมาตรฐานอีกรอบ** (Meta-Standard)
-> เพื่อให้ทุกระบบที่สร้างมีโครงสร้าง ความคิด และคุณภาพเดียวกัน
+> ESF ให้ความสำคัญกับสถาปัตยกรรม ความชัดเจนของความรับผิดชอบ การบำรุงรักษาระยะยาว และการทำงานร่วมกันระหว่างมนุษย์กับ AI
 
-## โครงสร้าง
+## Core Idea
+
+Language can change.  
+Tools can change.  
+Architecture decides whether the system survives.
+
+## Goals
+
+- Make software systems easier to understand
+- Reduce technical debt
+- Improve maintainability
+- Create shared standards for humans and AI
+- Prevent fast development from destroying system structure
+
+## Structure
 
 ```
 FRAMEWORK.md              ← Meta: definition ของ "1 ระบบที่ดี" (+ ปรัชญา, Architecture Rules, DoD, ADR)
@@ -25,9 +38,15 @@ modules/                  ← มาตรฐาน module ข้ามระบ
 examples/                 ← ตัวอย่างการใช้งานจริง
 ```
 
-## วิธีใช้
+## Usage
 
 1. อ่าน `FRAMEWORK.md` — ทำความเข้าใจปรัชญา
 2. เลือก type ที่ตรงกับระบบ → `types/`
 3. ใช้ function-standards กับทุกฟังก์ชัน
 4. ให้ AI agent อ่าน `agent/AGENTS.md` ก่อนเขียนโค้ด
+
+## Status
+
+ESF is currently in early development.
+
+Version: v0.1
